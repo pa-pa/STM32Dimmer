@@ -42,7 +42,7 @@ encoding utf-8
 Sheet 1 1
 Title "STM32 Dimmer"
 Date ""
-Rev ""
+Rev "V1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -74,12 +74,12 @@ $EndComp
 $Comp
 L SW_Push SW1
 U 1 1 5B64660C
-P 5300 4100
-F 0 "SW1" H 5350 4200 50  0000 L CNN
-F 1 "Config" H 5300 4040 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_B3U-1000P" H 5300 4300 50  0001 C CNN
-F 3 "https://de.aliexpress.com/item/100PCS-LOT-3-4-2MM-Micro-button-3X4X2-tact-switch-2-pin-little-turtle-single-shrapnel/32698846968.html?spm=a2g0s.9042311.0.0.27424c4djtzGLO" H 5300 4300 50  0001 C CNN
-	1    5300 4100
+P 5400 4100
+F 0 "SW1" H 5450 4200 50  0000 L CNN
+F 1 "Config" H 5400 4040 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3U-1000P" H 5400 4300 50  0001 C CNN
+F 3 "https://de.aliexpress.com/item/100PCS-LOT-3-4-2MM-Micro-button-3X4X2-tact-switch-2-pin-little-turtle-single-shrapnel/32698846968.html?spm=a2g0s.9042311.0.0.27424c4djtzGLO" H 5400 4300 50  0001 C CNN
+	1    5400 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -214,9 +214,9 @@ F 3 "" H 2650 2600 50  0001 C CNN
 	1    2650 2600
 	1    0    0    -1  
 $EndComp
-Text Label 6000 3000 2    60   ~ 0
+Text Label 6000 3400 2    60   ~ 0
 CLK1
-Text Label 6000 3100 2    60   ~ 0
+Text Label 6000 3300 2    60   ~ 0
 DT1
 $Comp
 L AT24CS32-SSHM U2
@@ -640,9 +640,9 @@ F 3 "" H 3850 4900 50  0001 C CNN
 	1    3850 4900
 	1    0    0    -1  
 $EndComp
-Text Label 3200 2000 0    60   ~ 0
+Text Label 5850 1900 2    60   ~ 0
 CLK2
-Text Label 3200 2100 0    60   ~ 0
+Text Label 5850 2000 2    60   ~ 0
 DT2
 $Comp
 L CP_Small C5
@@ -655,9 +655,9 @@ F 3 "" H 2750 2400 50  0001 C CNN
 	1    2750 2400
 	1    0    0    -1  
 $EndComp
-Text Label 6000 2900 2    60   ~ 0
+Text Label 6000 3200 2    60   ~ 0
 SW1
-Text Label 3200 1900 0    60   ~ 0
+Text Label 3200 3000 0    60   ~ 0
 SW2
 $Comp
 L R R5
@@ -873,19 +873,19 @@ Text Label 3200 2300 0    60   ~ 0
 PWM2
 Text Label 3200 2200 0    60   ~ 0
 PWM3
-Text Label 5850 1900 2    60   ~ 0
+Text Label 6000 3000 2    60   ~ 0
 PWM4
-Text Label 5850 2000 2    60   ~ 0
+Text Label 6000 3100 2    60   ~ 0
 PWM5
 $Comp
 L GND #PWR023
 U 1 1 5B68C3A5
-P 4850 4450
-F 0 "#PWR023" H 4850 4200 50  0001 C CNN
-F 1 "GND" H 4850 4300 50  0000 C CNN
-F 2 "" H 4850 4450 50  0001 C CNN
-F 3 "" H 4850 4450 50  0001 C CNN
-	1    4850 4450
+P 5150 4450
+F 0 "#PWR023" H 5150 4200 50  0001 C CNN
+F 1 "GND" H 5150 4300 50  0000 C CNN
+F 2 "" H 5150 4450 50  0001 C CNN
+F 3 "" H 5150 4450 50  0001 C CNN
+	1    5150 4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1246,8 +1246,6 @@ Wire Wire Line
 Connection ~ 2650 2300
 Connection ~ 2650 2500
 Wire Wire Line
-	5700 2900 6000 2900
-Wire Wire Line
 	3450 1900 3200 1900
 Wire Wire Line
 	6150 1600 6150 1700
@@ -1334,9 +1332,9 @@ Wire Wire Line
 Wire Wire Line
 	5700 3500 5700 4100
 Wire Wire Line
-	4850 4450 4850 4100
+	5150 4450 5150 4100
 Wire Wire Line
-	4850 4100 5100 4100
+	5150 4100 5200 4100
 Wire Wire Line
 	3900 5450 3900 5500
 Wire Wire Line
@@ -1352,7 +1350,7 @@ Wire Wire Line
 	6350 2000 6350 2300
 Connection ~ 6350 2300
 Wire Wire Line
-	5700 4100 5500 4100
+	5700 4100 5600 4100
 Wire Wire Line
 	1650 4600 1800 4600
 Connection ~ 1900 3250
@@ -1521,4 +1519,49 @@ Wire Wire Line
 	9750 4150 9750 4550
 Wire Wire Line
 	9750 4550 9000 4550
+Wire Wire Line
+	5700 3400 6000 3400
+Wire Wire Line
+	5700 3300 6000 3300
+Wire Wire Line
+	5700 3200 6000 3200
+Wire Wire Line
+	5700 2900 6000 2900
+Wire Wire Line
+	5700 2600 5950 2600
+Wire Wire Line
+	5700 2500 5950 2500
+Wire Wire Line
+	5700 2400 5950 2400
+Wire Wire Line
+	3450 3000 3200 3000
+Text Notes 8450 4850 0    60   ~ 0
+Use IRF7413 or IRF3708
+$Comp
+L C_Small C9
+U 1 1 5B86F4EA
+P 3150 4200
+F 0 "C9" H 3160 4270 50  0000 L CNN
+F 1 "100n" H 3250 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3150 4200 50  0001 C CNN
+F 3 "" H 3150 4200 50  0001 C CNN
+	1    3150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 5B86F615
+P 3150 4400
+F 0 "#PWR032" H 3150 4150 50  0001 C CNN
+F 1 "GND" H 3150 4250 50  0000 C CNN
+F 2 "" H 3150 4400 50  0001 C CNN
+F 3 "" H 3150 4400 50  0001 C CNN
+	1    3150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4400 3150 4300
+Wire Wire Line
+	3850 4100 3150 4100
+Connection ~ 3850 4100
 $EndSCHEMATC
